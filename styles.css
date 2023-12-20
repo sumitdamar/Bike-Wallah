@@ -1,0 +1,207 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    background-color: #F5F5F5;
+    overflow-x: hidden;
+    max-width: 100%;
+
+}
+.book-a-bike,.content{
+background-image: url(images/backGroungTexture.png);
+background-color: white;
+}
+.pressed{
+background-color: orangered;
+
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #FE6244; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: orange; 
+  }
+
+  .bg{
+
+    position: relative;
+    height: 350px;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.bg1{
+    background-image:url(images/background-image1.jpeg);
+}
+.bg2{
+    background-image:url(images/background2.jpeg);
+}
+
+.faqs.active .answer{
+  max-height: 300px;
+}
+.faqs.active svg{
+  transform: rotate(180deg);
+}
+
+svg{
+  transition: transform .4s ease-in;
+}
+.faqs.active .question{
+  background-color: #FE6244; 
+  transition: all .3s ease-in ;
+}
+@media screen and (max-width:768px) {
+  .background-image{
+   display: none;
+  }
+  .bike-image{
+    display:none;
+  }
+.bike-price{
+  margin: 10 auto;
+  padding: 0%;
+  align-items: center;
+  }
+  .display-BikeModel{
+    width: 100%;
+  }
+  .descriptionPart{
+    flex-direction: column;
+    align-items: center;
+  }
+  .descriptionPart1,.descriptionPart2{
+    width: 100%;
+    text-align: center;
+    padding:0 20px;  }
+
+  
+}
+@media screen and (max-width:640px ) {
+  .parallex-heading{
+    font-size: 30px;
+  }
+  .parallex-subHeading{
+    font-size: 18px;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .testimonial-card{
+    flex-direction: column; 
+    gap:25px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .cardTestimonial{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .FAQ-Sectionn{
+    width: 80%;
+    margin: 0 auto;
+    margin-top:40px;
+    margin-bottom: 60px;
+  }
+  .faq-content{
+    width: 100%;
+  }
+  .footer-part{
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+  }
+  .footerPart{
+    margin: 0 auto;
+  }
+  .descriptionPart{
+    flex-direction: column;
+  }
+  .descriptionPart1 , .descriptionPart2{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .descriptionCard{
+    flex-direction: column;
+align-items: center;
+  }
+
+  .navBar{
+    flex-direction: column;
+
+  }
+  .bookBike{
+    grid-column: 1;
+  }
+
+}
+@media screen and (max-width:1024px ){
+  .book-a-bike{
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+}
+@media screen and (max-width:450px ) {
+
+  .parallex-data{
+    font-size: 1rem;
+  }
+  .hero-title{
+    width: 350px;
+    font-size: 50px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .hero-para{
+  
+    text-align: center; 
+    font-size: 19px;
+    opacity: 50%;
+    width: 90%;
+  }
+  .hero-buttons{
+
+    margin-left: 45px;
+  }
+  .hero-openingText{
+    margin-left: 75px;
+  }
+
+}
+@media screen and (max-width:920px){
+  .navBarOptions{
+    margin-left: 70px;
+  }
+  .navBarButtons{
+    flex-direction: column;
+    margin-left: 70px; 
+    text-align: center;
+  }
+    .navBarButtons button{
+      padding: 5px;
+      margin: 7px 0;
+    }
+    .descriptionPart2{
+      width: 50%;
+      gap: 100px;
+      margin: 20px 0 0 0;
+    }
+}

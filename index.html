@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BikeWallah</title>
+  <link rel="stylesheet" href="./output.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+
+<body>
+  <section id="home" class="font-mullish">
+
+    <!------------------------------------ navBar -->
+    <div class="flex md:flex-row  flex-col justify-around mt-[10px] items-start md:items-center ">
+      <!-- logo-section  -->
+      <div class="flex">
+        <img class="hover:-translate-x-10 transition-all duration-500 ml-[6%] md:ml-[0] " src="./images/racing-motorcycle.svg"
+        height="60px" width="60px">
+        <h3 class="  pl-3 hover:scale-125 transition-all duration-500 leading-4 text-xl"><span
+          class="font-extrabold text-normalOran text-4xl">Bike</span><br> Wallah</h3>
+       <div class="md:hidden">    <i onclick="toggleHandler(this)" class="fa-solid fa-bars fa-xl text-orange-500 absolute top-[30px] right-[30px]"></i></div>
+          </div>
+          <!-- nav-options  -->
+          <div class="md:mt-0  mt-[50px] navBarOptions hidden md:block">
+            <ul class="flex md:flex-row flex-col w-screen md:w-full  items-center gap-7 md:gap-14 font-bold ">
+          <div class="relative transition-all duration-300 hover:text-orange-400 group">
+            <a href="#home">Home</a>
+            <div
+              class="w-full absolute transition-all duration-300 -bottom-4 hidden group-hover:block h-1 group-hover:bg-orange-400">
+            </div>
+          </div>
+          <!-- <div class="relative transition-all duration-300 hover:text-orange-400 group">
+            <a href="#vehicleModels">Vehicle-Models</a>
+            <div
+              class="w-full absolute transition-all duration-300 -bottom-4 hidden group-hover:block h-1 group-hover:bg-orange-400">
+            </div>
+          </div> -->
+          <div class="relative transition-all duration-300 hover:text-orange-400 group">
+            <a href="#bookBike">Book-Bike</a>
+            <div
+              class="w-full absolute -bottom-4 transition-all duration-300 hidden group-hover:block h-1 group-hover:bg-orange-400">
+            </div>
+          </div>
+          <div class="relative transition-all duration-300 hover:text-orange-400 group">
+            <a href="#testimonial">Testimonials</a>
+            <div
+            class="w-full absolute -bottom-4 transition-all duration-300 hidden group-hover:block h-1 group-hover:bg-orange-400">
+          </div>
+        </div>
+        <div class="relative transition-all duration-300 hover:text-orange-400 group">
+          <a href="#faq">FAQs</a>
+          <div
+            class="w-full absolute -bottom-4 transition-all duration-300 hidden group-hover:block h-1 group-hover:bg-orange-400">
+          </div>
+        </div>
+        </ul>
+      </div>
+      <!-- button for signin -->
+      <div class="navBarButtons hidden md:block flex gap-5 md:flex-row items-center justify-center md:w-fit w-full flex-col md:mt-0 mt-[20px]">
+        <button
+        class="  bg-orange-500 text-white font-extrabold px-4 py-2 rounded-md hover:bg-orange-600 transition-all duration-300">
+        Sign In
+      </button>
+        <button
+          class="  bg-orange-500 text-white font-extrabold px-4 py-2 rounded-md hover:bg-orange-600 transition-all duration-300">
+          Register
+        </button>
+      </div>
+
+    </div>
+
+
+    </div>
+    <!------------------------------------ hero-Section  -------------------------------------->
+    <div class="flex mx-auto pt-[10%] pl-[7%] md:mt-[-2%] mt-[8%] hero-main sm:mb-[0] mb-[15%] ">
+      <!-- left-side  -->
+      <div class="space-y-8 hero-content ">
+        <h2 class="text-2xl text-gray-400 hero-openingText ">Be free have a ride</h2>
+        <div class="w-2/3 sm:w-[90%]">
+          <h3 class="font-extrabold w-[80%] text-5xl hero-title md:text-6xl">Ride our bikes and save <span
+              class="text-normalOran"> big</span></h3>
+        </div>
+        <p class="md:w-1/2  sm:w-[80%] hero-para w-[60%] ">Lorem, ipsum dolor sit amet on blanditiis alercitationem ipsum minus
+          vel quidem dolores, amet
+          tempore repellendus ullam animi.</p>
+        <!-- buttons -->
+        <div class="space-x-3 flex hero-buttons">
+          <button
+            class="bg-orange-500 text-white font-extrabold px-5 py-3 rounded-sm hover:bg-orange-600 transition-all duration-300">
+            <a href="#bookBike">Book Ride</a>
+          </button>
+          <button
+            class="bg-black text-white font-extrabold px-5 py-3 rounded-sm hover:bg-white hover:text-normalOran transition-all duration-300">
+            Learn More
+          </button>
+        </div>
+      </div>
+      <!-- right-side  -->
+      <div class="">
+        <!-- bike image foreground -->
+        <div class="w-[110%] bike-image mx-auto "> <img width="100%" class=" -mx-[50%]  " src="./images/base-image.png"
+            > </div>
+        <!-- background image  -->
+        <div class="overflow-x-hidden"> <img
+            class="absolute  top-[15%] background-image -right-[20%] -z-10 w-[70%] rounded-full"
+            src="./images/image-1.jpg"></div>
+      </div>
+
+
+    </div>
+
+    <!------------------------- book-a-Bike  ------------------------------->
+
+      <div id="bookBike"
+      class=" drop-shadow-md grid grid-cols-1 md:grid-cols-2 transition-all duration-300 hover:drop-shadow-2xl book-a-bike gap-7 space-y-10 p-20 m-[6%] border- border-black">
+      <h3 class="text-3xl text-normalOran font-semibold  absolute top-[30px] left-[80px] ">Book a Bike</h3>
+        <div class="mt-[12%]">
+          <h4 class="font-mullish font-semibold text-[16px]">
+            <i class="fa fa-duotone mr-2 fa-motorcycle text-normalOran">
+            </i>Select Your Bike/Scooter <span class="font-bold text-normalOran">*</span>
+          </h4>
+          <select class="w-[100%] border-2 rounded-md border-orange-100 h-[50px] text-center text-orange-400">
+            <option>Select Bike</option>
+            <option>Activa 5G</option>
+            <option>OLA S1</option>
+            <option>Royal Enfield Bullet</option>
+            <option>Bajaj Pulsar 150</option>
+            <option>BMW S1000rr</option>
+          </select>
+        </div>
+
+        <!-- box2 -->
+        <div>
+          <h4 class="font-mullish font-semibold text-[16px]">
+            <i class="fa-solid mr-2 text-normalOran fa-location-dot"></i>Pick-up <span
+              class="font-bold text-normalOran">*</span>
+          </h4>
+          <select class="w-[100%] h-[50px]  border-2 rounded-md border-orange-100 text-center text-orange-400">
+            <option>location</option>
+            <option>Bhavarkua</option>
+            <option>Bholaram</option>
+            <option>Palasia</option>
+            <option>Vijaynagar</option>
+          </select>
+        </div>
+        <!-- box3 -->
+        <div>
+          <h4 class="font-mullish font-semibold text-[16px]">
+            <i class="fa-solid mr-2 text-normalOran fa-location-dot"></i>Drop-of <span
+              class="font-bold text-normalOran">*</span>
+          </h4>
+          <select class="w-[100%]  border-2 rounded-md border-orange-100 h-[50px] text-center text-orange-400">
+            <option>location</option>
+            <option>Bhavarkua</option>
+            <option>Bholaram</option>
+            <option>Palasia</option>
+            <option>Vijaynagar</option>
+          </select>
+        </div>
+        <!-- box4 -->
+        <div>
+          <h4 class="font-mullish font-semibold text-[16px]">
+            <i class="fa-solid text-normalOran mr-2 fa-calendar-days"></i>Pick-up <span
+              class="font-bold text-normalOran">*</span>
+          </h4>
+          <input type="date"
+          max="2023-12-31"
+          min="2023-06-01"
+            class="w-[100%]  border-2 rounded-md border-orange-100 h-[50px] text-center text-orange-400">
+        </div>
+        <!-- box5 -->
+        <div>
+          <h4 class="font-mullish font-semibold text-[16px]">
+            <i class="fa-solid text-normalOran mr-2 fa-calendar-days"></i>Drop-of <span
+              class="font-bold text-normalOran">*</span>
+          </h4>
+          <input type="date"
+          max="2023-12-31"
+          min="2023-06-01"
+            class="w-[100%] h-[50px]  border-2 rounded-md border-orange-100 text-center text-orange-400">
+        </div>
+        <!-- box6 -->
+        <div> <button
+            class="bg-orange-600  w-[100%]  h-[50px] mt-[5%] font-bold text-[1.2rem] text-white rounded-sm hover:bg-normalOran transition-all duration-300">
+            Submit
+          </button>
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+    <!--------------------------------------- Vechicle-Models  ------------------------------------>
+    <div class="my-[10%]">
+      <!-- top title and para  -->
+      <div class="bg1 bg  ">
+        <div id="vehicleModels" class="flex text-white flex-col gap-5 pt-20 text-center">
+          <h4 class="text-xl parallex-heading font-extrabold">Vehicle Models</h4>
+          <h5 class="text-5xl font-extrabold">Our rental fleet</h5>
+          <p class="text-[20px] parallex-subHeading mx-[30%]">Choose from a variety of our amazing vehicles to rent for
+            your next adventure
+            or business trip</p>
+        </div>
+      </div>
+      <!--bottom part-->
+      <div class="flex justify-around flex-wrap  py-[10%]">
+        <!--Bike table selection-->
+        <div class="flex font-thin text-2xl gap-2 display-BikeModel flex-col">
+
+          <button
+            class="bg-gray-300 Activa5G BikeM font-bold rounded-sm hover:text-white transition-all duration-200 hover:font-extrabold hover:bg-normalOran px-3 py-3 w-full">
+            Activa 5G
+          </button>
+          <button
+            class="bg-gray-300 Activa5G BikeM font-bold rounded-sm hover:text-white transition-all duration-200 hover:font-extrabold hover:bg-normalOran px-3 py-3 w-full">
+            RE Classic 350
+          </button>
+          <button
+            class="bg-gray-300 Activa5G BikeM font-bold rounded-sm hover:text-white transition-all duration-200 hover:font-extrabold hover:bg-normalOran px-3 py-3 w-full">
+            Ather
+          </button>
+          <button
+            class="bg-gray-300 Activa5G BikeM font-bold rounded-sm hover:text-white transition-all duration-200 hover:font-extrabold hover:bg-normalOran px-3 py-3 w-full">
+            OLA S1
+          </button>
+
+          <button
+            class="bg-gray-300 Activa5G BikeM font-bold rounded-sm hover:text-white transition-all duration-200 hover:font-extrabold hover:bg-normalOran px-3 py-3 w-full">
+            Continentel GT
+          </button>
+          <button
+            class="bg-gray-300 Activa5G BikeM font-bold rounded-sm hover:text-white transition-all duration-200 hover:font-extrabold hover:bg-normalOran px-3 py-3 w-full">
+            BMW S1000r
+          </button>
+
+
+        </div>
+        <!--Image of selected Bike-->
+        <div class="md:m-0 my-[10%]">
+          <img width="550px" class="relative myImg hover:scale-[105%] transition-all duration-500 "
+            src="./images/Activa5G.png">
+        </div>
+        <!--Price of Bike-->
+        <div
+          class=" bg-white rounded-md bike-price hover:drop-shadow-xl transition-all duration-300 hover:scale-105 content gap-10 pt-6 w-80 flex flex-col">
+          <div class="text-6xl text-center text-normalOran"><i class="fa-solid fa-indian-rupee-sign"></i><span
+              class="bikePrice">100</span><span class=" text-xl text-orange-400">/day*</span></div>
+          <div class=" text-xl text-gray-500 flex flex-col gap-5 px-10">
+            <span><i class="fa-solid fa-star fa-beat" style="color: #e07410;"></i><span class="bikeName ml-3">Activa 5G
+                2022</span></span>
+            <span><i class="fa-solid fa-star fa-beat" style="color: #e07410;"></i><span class="bikeEngine ml-3">110cc
+                Engine</span></span>
+            <span><i class="fa-solid fa-star fa-beat" style="color: #e07410;"></i><span class="bikeFuelType ml-3">Fuel
+                type Petrol</span></span>
+            <span><i class="fa-solid fa-star fa-beat" style="color: #e07410;"></i><span class="bikeTopSpeed ml-3">Top
+                Speed 100km/hr</span></span>
+            <button
+              class="bg-orange-600 my-7 text-white font-bold px-6 py-2 rounded-sm hover:bg-normalOran transition-all duration-300">
+              <a href="#bookBike">RESERVE NOW</a>
+            </button>
+          </div>
+
+
+
+        </div>
+      </div>
+      <!--Description Section-->
+      <div>
+        <div class="bg bg2 flex flex-col gap-5 mt-[2%] py-10 text-white  text-center ">
+          <h5 class="text-6xl parallex-heading pt-20 font-bold">Save big with our cheap Bike rental!</h5>
+          <h6 class="text-2xl ">Top bike Suppliers. <span class="text-orange-600"> 24/7 </span>Support.</h6>
+        </div>
+        <!-- middle image  -->
+        <img class="mx-auto mt-[6%]" width="65%" src="images/group-bike.png">
+
+        <!-- bottom part of Description section  -->
+        <div class="flex mt-[8%] justify-center flex-wrap descriptionPart gap-x-14">
+          <!-- left part -->
+          <div class="w-[35%] flex descriptionPart1 flex-col">
+            <h6 class="text-xl">Why Choose Us</h6>
+            <h3 class="text-5xl font-extrabold">Best valued deals you will ever find</h3>
+            <p class="pt-[7%] text-gray-500 leading-8 text-[17px]">Discover the best deals you'll ever find with our
+              unbeatable offers. We're dedicated to providing you
+              with the best value for your money, so you can enjoy top-quality services and products without breaking
+              the bank. Our deals are designed to give you the ultimate renting experience, so don't miss out on your
+              chance to save big.</p>
+            <button
+              class="bg-orange-600 text-white text-[17px] font-extrabold  my-[6%] py-3 rounded-sm hover:bg-orange-700 transition-all duration-300">
+              <a href="#home">Find Details</a>
+            </button>
+
+          </div>
+
+
+          <!-- right part -->
+          <div class="w-1/3 flex descriptionPart2 flex-col gap-10">
+
+            <!-- row 1 -->
+            <div class="flex descriptionCard">
+              <img width="50%" src="images/taxi emoji.png">
+              <div class="pl-[4%]">
+                <h5 class="text-2xl font-bold">Adventure Rides</h5>
+                <p class=" text-gray-500 text-[17px]">Take your driving experience to the next level with our top-notch
+                  bikes for your adventures.</p>
+              </div>
+            </div>
+            <!-- row 2 -->
+            <div class="flex descriptionCard">
+              <img width="50%" src="images/coin-emoji.png">
+              <div class="pl-[4%]">
+                <h5 class="text-2xl font-bold">Adventure Rides</h5>
+                <p class=" text-gray-500 text-[17px]">Take your driving experience to the next level with our top-notch
+                  bikes for your adventures.</p>
+              </div>
+            </div>
+            <!-- row 3 -->
+            <div class="flex descriptionCard">
+              <img width="50%" src="images/coin2.png">
+              <div class="pl-[4%]">
+                <h5 class="text-2xl font-bold">Adventure Rides</h5>
+                <p class=" text-gray-500 text-[17px]">Take your driving experience to the next level with our top-notch
+                  bikes for your adventures.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- testimonial section  -->
+    <div id="testimonial" class="bg-[#F0EEED] py-[5%]">
+      <!-- upper-part -->
+      <div class="flex flex-col text-center gap-5">
+        <h4 class="text-xl font-bold">Reviewed by People</h4>
+        <h2 class="text-5xl parallex-heading font-bold">Client's Testimonials</h2>
+        <p class="w-1/2 mx-auto pt-[1%] text-gray-500 text-[16px]">Discover the positive impact we've made on the our
+          clients by reading through their testimonials. Our clients have experienced our service and results, and
+          they're eager to share their positive experiences with you.</p>
+      </div>
+      <!-- lower-part  -->
+      <div class="flex justify-center testimonial-card mt-[3%] gap-x-12">
+        <div
+          class="w-[40%] cardTestimonial shadow-md book-a-bike p-10 hover:drop-shadow-lg transition-all duration-200 group ">
+          <p class="text-xl  text-gray-500 group-hover:text-gray-800 ransition-all duration-200">"We rented a bike from
+            this website and had an amazing experience! The booking was easy and the rental rates
+            were very affordable. "</p>
+          <div class="flex p-10 gap-x-5">
+            <img class=" w-24" src="images/mikeTyson.png">
+            <span class=" my-auto font-extrabold text-[21px]">Mike Tyson <br><span
+                class="text-[18px] font-normal">LasVegas</span></span>
+          </div>
+        </div>
+        <div
+          class="w-[40%] cardTestimonial book-a-bike shadow-md p-10 hover:drop-shadow-lg transition-all duration-200 group ">
+          <p class="text-xl  text-gray-500 group-hover:text-gray-800 ransition-all duration-200">"We rented a bike from
+            this website and had an amazing experience! The booking was easy and the rental rates
+            were very affordable. "</p>
+          <div class="flex p-10 gap-x-5">
+            <img class=" w-24" src="images/mikeTyson.png">
+            <span class=" my-auto font-extrabold text-[21px]">Mike Tyson <br><span
+                class="text-[18px] font-normal">LasVegas</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------------- FAQ Section ----------------------------------->
+
+    <!-- top heading part -->
+
+    <section id="faq" class="faq-section flex flex-col mt-[6%]">
+      <div class="flex flex-col faq-content text-center w-1/2 mx-auto space-y-4">
+        <h6 class="text-xl font-bold">FAQ</h6>
+        <h3 class="text-4xl font-bold">Frequently Asked Question</h3>
+        <p class="text-gray-600 faq-content text-[17px]">Frequently Asked Questions About the bike Rental Booking Process
+          on Our Website: Answers to Common Concerns and Inquiries.</p>
+      </div>
+
+      <!-- faq main part -->
+      <div
+        class="FAQ-Sectionn flex flex-col w-[60%] content mx-auto mt-[3%] space-y-3   shadow-md transition-all border-[1px]">
+        <div class="faqs max-w-full ">
+          <div class="question flex justify-between">
+            <h3 class="text-2xl font-bold py-3 px-5">1. How do I find the bike rental deals?</h3>
+            <div class="w-12"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g data-name="Double down">
+                  <path
+                    d="M12 17a1 1 0 0 1-.707-.293l-4-4a1 1 0 1 1 1.414-1.414L12 14.586l3.293-3.293a1 1 0 0 1 1.414 1.414l-4 4A1 1 0 0 1 12 17z"
+                    style="fill:#ff8e31" />
+                  <path
+                    d="M12 13a1 1 0 0 1-.707-.293l-4-4a1 1 0 1 1 1.414-1.414L12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4A1 1 0 0 1 12 13z"
+                    style="fill:#ff8e31" />
+                </g>
+              </svg>
+              </g>
+              </svg>
+            </div>
+          </div>
+          <div
+            class="answer font-light text-gray-600 text-[20px] max-h-0 overflow-hidden transition-all duration-[.4s] ease-linear px-5 mt-3 ">
+            You can find bike rental deals by researching online and comparing prices from different rental companies.
+            Websites such as Expedia, Kayak,
+            and Travelocity allow you to compare prices and view available rental options. It is also recommended to
+            sign up for email newsletters
+          </div>
+
+        </div>
+
+        <div class="faqs max-w-full ">
+          <div class="question flex justify-between">
+            <h3 class="text-2xl font-bold py-3 px-5">2. How do I find the bike rental deals?</h3>
+            <div class="w-12"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g data-name="Double down">
+                  <path
+                    d="M12 17a1 1 0 0 1-.707-.293l-4-4a1 1 0 1 1 1.414-1.414L12 14.586l3.293-3.293a1 1 0 0 1 1.414 1.414l-4 4A1 1 0 0 1 12 17z"
+                    style="fill:#ff8e31" />
+                  <path
+                    d="M12 13a1 1 0 0 1-.707-.293l-4-4a1 1 0 1 1 1.414-1.414L12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4A1 1 0 0 1 12 13z"
+                    style="fill:#ff8e31" />
+                </g>
+              </svg>
+              </g>
+              </svg>
+            </div>
+          </div>
+          <div
+            class="answer font-light text-gray-600 text-[20px] max-h-0 overflow-hidden transition-all duration-[.4s] ease-linear px-5 mt-3 ">
+            You can find bike rental deals by researching online and comparing prices from different rental companies.
+            Websites such as Expedia, Kayak,
+            and Travelocity allow you to compare prices and view available rental options. It is also recommended to
+            sign up for email newsletters
+          </div>
+
+        </div>
+
+        <div class="faqs max-w-full ">
+          <div class="question flex justify-between">
+            <h3 class="text-2xl font-bold py-3 px-5">3. How do I find the bike rental deals?</h3>
+            <div class="w-12"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g data-name="Double down">
+                  <path
+                    d="M12 17a1 1 0 0 1-.707-.293l-4-4a1 1 0 1 1 1.414-1.414L12 14.586l3.293-3.293a1 1 0 0 1 1.414 1.414l-4 4A1 1 0 0 1 12 17z"
+                    style="fill:#ff8e31" />
+                  <path
+                    d="M12 13a1 1 0 0 1-.707-.293l-4-4a1 1 0 1 1 1.414-1.414L12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4A1 1 0 0 1 12 13z"
+                    style="fill:#ff8e31" />
+                </g>
+              </svg>
+              </g>
+              </svg>
+            </div>
+          </div>
+          <div
+            class="answer font-light text-gray-600 text-[20px] max-h-0 overflow-hidden transition-all duration-[.4s] ease-linear px-5 mt-3 ">
+            You can find bike rental deals by researching online and comparing prices from different rental companies.
+            Websites such as Expedia, Kayak,
+            and Travelocity allow you to compare prices and view available rental options. It is also recommended to
+            sign up for email newsletters
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!------------------------------ bottom part ------------------------------>
+    <section class="footer-part bg-[#F0EEED] ">
+      <div class=" flex footer-part grid-cols-4` py-[5%] mt-[7%] mx-[5%] text-[17px] gap-10  ">
+        <ul class="leading-8">
+          <li class="font-extrabold text-3xl mb-[8%]">Bike <span class="font-normal">Rental</span></li>
+          <li class="text-gray-500">We offers a big range of vehicles for all your driving needs. We have the perfect
+            bike
+            to meet your needs.</li>
+          <li class="mt-[10%] hover:text-normalOran cursor-pointer  transition-all duration-300 font-bold">9988776655</li>
+          <li class="hover:text-normalOran transition-all  cursor-pointer duration-300 font-bold">bikerental@gmail.com
+          </li>
+          <li class="font-serif hover:text-normalOran  cursor-pointer  transition-all duration-300 ">Design by aMan</li>
+        </ul>
+        <ul class=" font-mullish footerPart flex flex-col ml-[%] gap-y-4 ">
+          <li class="font-bold text-[1.6rem]">COMPANY</li>
+          <a href="#home" class="hover:text-normalOran  transition-all duration-300">Indore</a>
+          <a href="#home" class="hover:text-normalOran transition-all duration-300">Mobile</a>
+          <a href="#home" class="hover:text-normalOran transition-all duration-300">Blog</a>
+          <a href="#home" class="hover:text-normalOran transition-all duration-300">How we work</a>
+        </ul>
+        <ul class="font-mullish flex flex-col gap-y-4">
+          <li class="font-bold text-[1.6rem]">WORKING HOURS</li>
+          <li>Mon - Fri: 9:00AM - 9:00PM</li>
+          <li>Sat: 9:00AM - 19:00PM</li>
+          <li>Sun: Closed</li>
+        </ul>
+        <ul class="w-[84%] font-mullish flex footerPart flex-col gap-y-6">
+          <li class="font-bold text-[1.6rem]">SUBSCRIPTION</li>
+          <li>Subscribe your Email address for latest news & updates.</li>
+          <li><input type="text" placeholder="Your Email"
+              class=" text-center w-full p-[0.6rem] text-[15px] bg-gray-200">
+          </li>
+          <li> <button
+              class="bg-orange-600 text-white text-[17px] py-2 font-extrabold w-full rounded-sm hover:bg-orange-700 transition-all duration-300">
+              Submit
+            </button></li>
+        </ul>
+      </div>
+    </section>
+
+
+
+
+
+  </section>
+  <script src="index.js"></script>
+</body>
+
+</html>
